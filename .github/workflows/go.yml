@@ -18,6 +18,9 @@ jobs:
       with:
         go-version: '1.20'
 
+    - name: Just
+      run: snap install --edge --classic just
+      
     - name: Build
       run: just build
 
